@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+
+<body>
+
+    <script>
+        function calcularM(num) {
+            var soma = num.reduce((total, num) => total + num, 0);
+            return soma / num.length;
+        }
+
+        var num = [99, 45, 5, 27, 33];
+        var media = calcularM(num);
+        console.log("Média:", media);
+
+    </script>
+
+</body>
+
+</html>
